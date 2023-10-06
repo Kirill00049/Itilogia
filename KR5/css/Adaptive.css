@@ -1,0 +1,466 @@
+@media screen and (max-width: 1330px){
+    .meeting-image {
+        margin-left: 14px;
+        transform: translate(-100px, 100px);
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .makaruns {
+        justify-content: center;
+        column-gap: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .meeting-container {
+        display: block;
+    }
+    .meeting-text-title {
+        max-width: 600px;
+    }
+
+    .meeting {
+        padding-top: 88px;
+        padding-bottom: 0;
+    }
+
+    .meeting-text-description {
+        margin-bottom: 41px;
+    }
+
+    .meeting-image {
+        position: relative;
+        width: 529px;
+        margin-left: 14px;
+        transform: translate(250px, -100px);
+        margin-bottom: 0;
+    }
+    .makaruns {
+        justify-content: center;
+        column-gap: 100px;
+    }
+    .meeting-continue-container {
+        display: block;
+        text-align: center;
+    }
+    .meeting-continue-text-title {
+        margin: 0 auto 61px;
+    }
+    .meeting-continue-text-description {
+        max-width: 672px;
+        margin: 0 auto 40px;
+    }
+
+    .advantages-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 80px;
+        column-gap: 150px;
+    }
+
+    .order-container-flex img {
+        position: relative;
+        top: 105px;
+        left: 0;
+    }
+
+    .order-container-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .order-order {
+        margin-left: 0;
+    }
+
+    .order-container > img:nth-child(1) {
+        left:450px;
+    }
+
+    .order-container > img:nth-child(2) {
+        left:800px;
+    }
+
+    @keyframes circles {
+        from {
+            opacity: 1;
+            transform: scale(0.1);
+        }
+        to {
+            opacity: 0;
+            transform: scale(0.6);
+        }
+    }
+
+    @keyframes strawberry1 {
+        from {
+            top: 340px;
+        }
+
+        50% {
+            top: 360px;
+        }
+
+        to {
+            top: 340px;
+        }
+    }
+
+    @keyframes strawberry2 {
+        from {
+            top: 220px;
+        }
+
+        50% {
+            top: 230px;
+        }
+
+        to {
+            top: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .header-info {
+        display: none;
+    }
+
+    .header-container {
+        max-width: 530px;
+        margin: 0;
+    }
+
+    .meeting-continue-image img {
+        width: 302px;
+    }
+
+    .meeting-image{
+        transform: translate(160px, -100px);
+    }
+
+    .order-container > img:nth-child(1) {
+        left:400px;
+    }
+
+    .order-container > img:nth-child(2) {
+        left:700px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .meeting-image{
+        transform: translate(160px, -100px);
+    }
+
+    .order-container > img:nth-child(1) {
+        left:350px;
+    }
+
+    .order-container > img:nth-child(2) {
+        left:600px;
+    }
+
+    .makaruns {
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    @keyframes circles {
+        from {
+            opacity: 1;
+            transform: scale(0.1);
+        }
+        to {
+            opacity: 0;
+            transform: scale(0.55);
+            border-color: #eba8b1;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .meeting {
+        padding-top: 62px;
+        padding-bottom: 40px;
+    }
+
+    .meeting-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meeting-continue-text-title {
+        font-size: 30px;
+    }
+
+    .meeting-text-title {
+        margin-bottom: 40px;
+    }
+
+    .meeting-button {
+        margin-bottom: 38px;
+    }
+
+    .meeting-image {
+        position: relative;
+        transform: translate(0);
+        margin: 0 auto;
+    }
+
+    .meeting-image img, .meeting-image {
+        width: 250px;
+    }
+
+    .order-container > img:nth-child(2) {
+        display: none;
+    }
+
+    .advantages-item {
+        text-align: center;
+        max-width: 165px;
+    }
+
+    .advantage-number {
+        margin: 0 auto 13px;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .advantage-description {
+        font-size: 13px;
+    }
+
+    .order-container-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .order-order {
+        max-width: 344px;
+    }
+
+    .order-title {
+        font-size: 31px;
+    }
+
+    .order-description {
+        font-size: 16px;
+    }
+
+    .order-container-flex img{
+        display: none;
+    }
+
+    .order-container > img:nth-child(1) {
+        left: 400px
+    }
+
+    .form input, .order-button {
+        width: 344px;
+    }
+
+    .footer-container {
+        display: grid;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .footer .logotype{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rights1 {
+        display: none;
+    }
+
+    .rights2{
+        display: block;
+        font-size: 12px;
+        font-family: Gilroy-Regular, sans-serif;
+        color: rgb(227, 172, 180);
+    }
+
+    @keyframes circles {
+        from {
+            opacity: 1;
+            transform: scale(0.1);
+        }
+        to {
+            opacity: 0;
+            transform: scale(0.4);
+        }
+    }
+
+    @keyframes strawberry1 {
+        from {
+            top: 220px;
+        }
+
+        50% {
+            top: 230px;
+        }
+
+        to {
+            top: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .meeting-text-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advantages-list {
+        column-gap: 60px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    .order-container > img:nth-child(1) {
+        left: 300px;
+    }
+    .advantages-list {
+        column-gap: 15px;
+    }
+
+    .menu.open {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: rgb(164, 107, 0);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+
+    .header-menu {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: #000000c9;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger svg {
+        width: 36px;
+        height: 36px;
+        fill: #e7778c;
+        margin-right: 20px;
+    }
+
+    .header-menu-item {
+        margin: 15px 0;
+    }
+
+    .header-menu-item a{
+        color: #eba8b1;
+    }
+
+    .header-menu-item:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .header-menu.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #eba8b1;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .meeting-continue {
+        padding-top: 100px;
+    }
+
+    .choise-title {
+        font-size: 30px;
+    }
+
+    .order-container > img:nth-child(1) {
+        left: 260px;
+    }
+
+    .order input {
+        width: 100%;
+    }
+
+    .order-button {
+        width: 100%;
+    }
+
+    .fixed-item {
+        width: 75px;
+        height: 75px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .fixed-item img {
+        width: 45px;
+    }
+
+    .window {
+        bottom:22px;
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .order-container > img:nth-child(1) {
+        left: 220px;
+    }
+}

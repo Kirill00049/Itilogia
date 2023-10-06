@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: MullerRegular;
+    src: url("../fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../fonts/MullerBold.otf");
+}
+
+@font-face {
+    font-family: MullerExtraBold;
+    src: url("../fonts/MullerExtraBold.otf");
+}
+
+body {
+    font-family: MullerRegular, sans-serif;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    width: 489px;
+    justify-content: space-between;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1;
+}
+
+.main {
+    margin: 132px 0 81px 0;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info {
+    max-width: 622px;
+}
+
+.main-info h1 {
+    font-size: 45px;
+    font-family: MullerExtraBold, sans-serif;
+    line-height: 1.222;
+}
+
+.double-title {
+    color: rgb(185, 145, 80);
+}
+
+.double-title span{
+    color: #ffaf18;
+}
+
+.main-advantages {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-advantage {
+    max-width: 306px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+.advantage-text {
+    margin-left: 16px;
+}
+
+.advantage-title {
+    font-size: 16px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(255, 175, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1;
+}
+
+.main-action {
+    margin-top: 60px;
+}
+
+.btn {
+    background-color: rgb(255, 175, 24);
+    border: 0;
+    font-size: 16px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-btn {
+    width: 224px;
+    padding: 22px;
+}
+
+.products {
+    padding: 80px 0 120px 0;
+}
+
+.products-title {
+    font-size: 35px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(189, 152, 92);
+    text-align: center;
+}
+
+.products-items {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 282px;
+    padding: 0 20px 15px;
+    margin-top: 24px;
+    text-align: center;
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    box-sizing: border-box;
+}
+
+.product-image {
+    height: 195px;
+    vertical-align: center;
+}
+
+.product-title {
+    font-size: 18px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+    margin-bottom: 16px;
+}
+
+.product-text {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    height: 49px;
+    max-width: 242px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.product-btn {
+    padding: 18px;
+    width: 242px;
+    height: 50px;
+}
+
+.order {
+    padding: 120px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.order-text {
+    max-width: 384px;
+}
+
+.order-text-title {
+    font-size: 35px;
+    font-family: MullerExtraBold, sans-serif;
+    margin-bottom: 65px;
+}
+
+.order-text-message {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.order-form {
+    margin: 0 0 0 122px;
+    max-width: 330px;
+}
+
+.order-input {
+    border-width: 1px;
+    border-color: rgb(185, 145, 80);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 330px;
+    padding: 23px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 24px;
+    font-size: 18px;
+    height: 60px;
+}
+
+.order-input::placeholder {
+    color: rgb(203, 168, 110);
+}
+
+.order-form .btn {
+    padding: 22px;
+    width: 330px;
+    height: 60px;
+}
+
+.order-image {
+    width: 282px;
+    position: relative;
+    margin-left: 78px;
+}
+
+.order-image img {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    padding: 16px 0 15px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.rights {
+    font-size: 12px;
+    color: rgb(186, 179, 179);
+    margin-left: 359px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+
+
+
+
+
+
+

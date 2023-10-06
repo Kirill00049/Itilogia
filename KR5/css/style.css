@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("../fonts/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: Tavolga;
+    src: url("../fonts/Tavolga Free.ttf");
+}
+
+body {
+    font-family: Tavolga, sans-serif;
+}
+
+.header {
+    background-color: #eba8b1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -118px;
+}
+
+.header-menu-item:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.header-menu-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(119, 11, 29);
+    transition-duration: 0.1s;
+    transition-delay: 0.3s;
+    transition: padding-bottom .1s .3s, border-bottom .1s .3s;
+}
+
+.header-menu-link:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #821328;
+}
+
+.header-info {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Gilroy-Bold, sans-serif;
+    text-decoration: none;
+}
+
+.meeting {
+    padding-top: 126px;
+    padding-bottom: 108px;
+    background-color: #eba8b1;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.meeting-container {
+    display: flex;
+}
+
+.meeting-text {
+    position: relative;
+    z-index: 1;
+}
+
+.meeting-text-title {
+    font-size: 55px;
+    margin-bottom: 60px;
+    line-height: 1.091;
+}
+
+.meeting-text-description {
+    margin-bottom: 86px;
+    font-size: 18px;
+    line-height: 1.389;
+    max-width: 350px;
+}
+
+.button {
+    position: relative;
+    z-index: 1;
+    background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy-Bold, sans-serif;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    transition-property: box-shadow;
+}
+
+.button:hover {
+    box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+
+.meeting-image {
+    margin-left: 14px;
+    position: relative;
+}
+
+.meeting-image img {
+    position: relative;
+    z-index: 1;
+}
+
+.meeting-image::before, .meeting-image::after {
+    content: '';
+    position: absolute;
+    top: -265px;
+    bottom: -265px;
+    left: -265px;
+    right: -265px;
+    border: 3px solid rgb(119, 11, 29);
+    border-radius: 50%;
+    animation: circles 2s infinite;
+    animation-timing-function: ease-out;
+}
+
+.meeting-image::after {
+    animation-delay: 0.3s;
+}
+
+.meeting-button {
+    width: 240px;
+    padding: 22px;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.meeting-continue {
+    padding: 120px 0 30px;
+    background-color: #ffefef;
+}
+
+.meeting-continue-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.meeting-continue-text {
+    color: rgb(51, 25, 7);
+}
+
+.meeting-continue-text-title {
+    font-size: 45px;
+    line-height: 1.222;
+    margin-bottom: 60px;
+    max-width: 478px;
+}
+
+.meeting-continue-text-description {
+    font-size: 18px;
+    font-family: Gilroy-Regular, sans-serif;
+    line-height: 1.556;
+    max-width: 403px;
+}
+
+.advantages {
+    padding-top: 57px;
+    padding-bottom: 126px;
+    background-color: #ffefef;
+}
+
+.advantages-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    max-width: 222px;
+    color: rgb(51, 25, 7);
+}
+
+.advantage-number {
+    border-radius: 50%;
+    background-color: rgb(130, 19, 40);
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    font-family: Gilroy-ExtraBold, sans-serif;
+    color: white;
+    line-height: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 13px;
+    transition: color .3s, background-color .3s;
+}
+
+.advantages-item:hover .advantage-number{
+    background-color: #eba8b1;
+    color: rgb(130, 19, 40);
+}
+
+.advantage-title {
+    font-size: 20px;
+    font-family: Gilroy-ExtraBold, sans-serif;
+    margin-bottom: 19px;
+}
+
+.advantage-description {
+    font-size: 15px;
+    font-family: Gilroy-Medium, sans-serif;
+    line-height: 1.333;
+}
+
+.choise {
+    background-color: #eba8b1;
+    padding: 120px 0 120px;
+}
+
+.choise-title {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 143px;
+    text-align: center;
+}
+
+.makaruns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 136px;
+}
+
+.makarun {
+    color: white;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.makarun-image {
+    position: absolute;
+    top: -60px;
+    left: 32px;
+    transition-duration: .5s;
+}
+
+.makarun:hover .makarun-image{
+    transform: scale(1.1);
+}
+
+.makarun-info {
+    padding: 109px 21px 27px;
+}
+
+.marakun-title {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.marakun-info-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.marakun-info-secondary-description {
+    margin-right: 36px;
+}
+
+.marakun-info-secondary-description-sizing {
+    font-size: 15px;
+    font-family: Gilroy-Regular, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+}
+
+.marakun-info-secondary-description-price {
+    font-size: 15px;
+    font-family: Gilroy-Regular, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.choise-button {
+    border-radius: 25px;
+    width: 130px;
+    height: 50px;
+    padding: 20px 29px;
+    box-sizing: border-box;
+    line-height: 10px;
+    font-size: 16px;
+}
+
+.order {
+    background-color: #ffefef;
+}
+
+.order-container {
+    padding: 98px 0 120px;
+    position: relative;
+}
+
+.order-container img {
+    position: absolute;
+}
+
+.order-container > img:nth-child(1) {
+    left: -12px;
+    animation: strawberry1 2s ease-in infinite;
+}
+
+.order-container > img:nth-child(2) {
+    left:  938px;
+    animation: strawberry2 2.5s ease-in infinite;
+}
+
+.order-container-flex img {
+    top: 168px;
+    left: 15px;
+}
+
+.order-order {
+    margin-left: 584px;
+}
+
+.order-title {
+    font-size: 45px;
+    color: rgb(51, 25, 7);
+    margin-bottom: 41px;
+}
+
+.order-description {
+    font-size: 18px;
+    font-family: Gilroy-Regular, sans-serif;
+    color: rgb(51, 25, 7);
+    margin-bottom: 48px;
+    max-width: 404px;
+    line-height: 1.556;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-text {
+    font-size: 18px;
+    font-family: Gilroy-Bold, sans-serif;
+    color: rgb(18, 10, 6);
+    margin-bottom: 21px;
+}
+
+.order input {
+    padding: 20px 25px;
+    font-size: 15px;
+    font-family: Gilroy-Bold, sans-serif;
+    color: rgb(118, 12, 34);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: rgb(130, 19, 40);
+    border-style: solid;
+    border-radius: 30px;
+    width: 293px;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.order .your-choise {
+    margin-bottom: 40px;
+}
+
+.order input::placeholder {
+    color: rgb(118, 12, 34);
+}
+
+.order-button {
+    border-radius: 30px;
+    padding: 19px 22px;
+    width: 295px;
+    font-size: 18px;
+}
+
+.footer {
+    padding: 73px 0 63px;
+    background-color: #c0707c;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights2 {
+    display: none;
+}
+
+.rights1 {
+    margin-top: 19px;
+    font-size: 12px;
+    font-family: Gilroy-Regular, sans-serif;
+    color: rgb(227, 172, 180);
+}
+
+.footer-inst {
+    text-align: center;
+}
+
+.footer-inst img {
+    margin-bottom: 15px;
+}
+
+.footer-inst div {
+    font-size: 16px;
+    font-family: Gilroy-Bold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-inst a {
+    text-decoration: none;
+}
+
+.footer-info {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Gilroy-Bold, sans-serif;
+    text-decoration: none;
+}
+
+/* Не нашел где посмотреть код для градиента */
+.fixed-item {
+    position: fixed;
+    z-index: 9999;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(113,8,30), rgb(215,72,92));
+    transition: box-shadow .3s;
+}
+
+/* Тень и анимация немного не та */
+.fixed-item:hover {
+    box-shadow: 0 0 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.fixed-item:hover ~ .window {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.window {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    bottom: 37px;
+    right: 140px;
+    border-width: 2px;
+    border-color: rgb(119, 10, 29);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(254, 239, 238);
+    width: 172px;
+    font-size: 15px;
+    font-family: Gilroy-Medium,sans-serif;
+    color: rgb(119, 10, 29);
+    line-height: 1.333;
+    transform: translateY(200%);
+    opacity: 0;
+    transition: transform .5s, opacity .3s;
+}
+
+.window::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid rgb(119, 10, 29);
+    border-right: 2px solid rgb(119, 10, 29);
+    position: absolute;
+    background-color: rgb(254, 239, 238);
+    transform: rotate(45deg);
+    right: -10px;
+    top: 26px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+/* Анимация выглядит немного странно */
+@keyframes circles {
+    from {
+        opacity: 1;
+        transform: scale(0.1);
+        /*border-color: #4b2b2d;*/
+        /* Не работает изменение цвета */
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.7);
+        /*border-color: #eba8b1;*/
+        /* Не работает изменение цвета */
+    }
+}
+
+@keyframes strawberry1 {
+    from {
+        top: 142px;
+    }
+
+    50% {
+        top: 162px;
+    }
+
+    to {
+        top: 142px;
+    }
+}
+
+@keyframes strawberry2 {
+    from {
+        top: 517px;
+    }
+
+    50% {
+        top: 527px;
+    }
+
+    to {
+        top: 517px;
+    }
+}
+
